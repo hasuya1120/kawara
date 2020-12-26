@@ -1,0 +1,38 @@
+{
+  "name": "kawara",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "analyse": "elm-analyse",
+    "test": "elm-test",
+    "format": "elm-format --yes src/",
+    "start": "npm run format && parcel src/index.html",
+    "build": "npm run format && elm-test && parcel build src/index.html --public-url ./",
+    "docs": "npx elm-doc-preview"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hasuya1120/kawara.git"
+  },
+  "author": "hasuya1120",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hasuya1120/kawara/issues"
+  },
+  "homepage": "https://github.com/hasuya1120/kawara#readme",
+  "dependencies": {
+    "elm": "^0.19.1-3",
+    "elm-analyse": "^0.16.5",
+    "elm-doc-preview": "^5.0.5",
+    "elm-format": "^0.8.4",
+    "elm-test": "^0.19.1-revision4",
+    "parcel-bundler": "^1.12.4",
+    "sass": "^1.30.0"
+  },
+  "devDependencies": {
+    "elm-hot": "^1.1.5",
+    "node-elm-compiler": "^5.0.5"
+  }
+}
